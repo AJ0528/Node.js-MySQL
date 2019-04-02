@@ -71,5 +71,5 @@ function purchase() {
     }
   
   }
-  connection.query()
+  // connection.query()
 
