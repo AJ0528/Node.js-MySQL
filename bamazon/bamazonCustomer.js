@@ -62,12 +62,39 @@ function purchase() {
         type: "input",
         message: " how many units of the product they would like to buy?"
       },
+      
     ])
       .then(function(answer) {
-        // when finished prompting, insert a new item into the db with that info
-      console.log(answer.item);
-      console.log(answer.quanity);
-      })
+      connection.query("SELECT * FROM products", function(err, results) {
+      var chosenItem;
+      for (var index = 0; index < results.length; index++) {
+        if (results[i].item === answer.id) {
+          chosenItem = results[i];
+          console.log("sorry not enough items");
+        }
+        if (chosenItem.id < parseInt(answer.id)){
+          connection.query(
+            "UPDATE products SET ? WHERE ?",
+            [
+              {
+                stock_quantity: results[0].stock_quantity - answer.amount,
+              },
+              {
+                id: chosenItem.id
+              }
+            ],
+            function(error) {
+              if (error) throw err;
+              console.log("Order placed successfully!");
+            }
+          )
+        }
+        
+      }
+        
+      });
     }
-  
-  }
+      );
+}
+}
+
