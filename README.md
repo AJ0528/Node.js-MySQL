@@ -1,11 +1,13 @@
 # Node.js-MySQL
-Node.js &amp; MySQL
 
+Node.js & MySQL
 
-# this is a CLI-Table
+# This is a CLI-Table
 
 ![CLI-Tables](https://user-images.githubusercontent.com/46428004/55442817-33836480-557e-11e9-8618-972e8cd1a774.gif)
 
 
 # This is how you buy
+
+![Buying items](https://user-images.githubusercontent.com/46428004/55447238-e957ae80-5590-11e9-9870-93f2bc68ef41.gif)
 

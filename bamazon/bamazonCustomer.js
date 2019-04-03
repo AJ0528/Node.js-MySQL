@@ -71,5 +71,3 @@ function purchase() {
     }
   
   }
-  // connection.query()
-
